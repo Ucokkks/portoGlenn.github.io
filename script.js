@@ -1,6 +1,30 @@
-const dynamicText = document.querySelector(".text-span");
-const words = ["Pelajar", "UI/UX", "Calon Mantu Idaman", "Full stack developer"];
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
 
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute("href"); 
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth", 
+          block: "start", 
+        });
+      }
+    });
+  });
+});
+
+const dynamicText = document.querySelector(".text-span");
+const words = [
+  "Pelajar",
+  "UI/UX",
+  "Calon Mantu Idaman",
+  "Full stack developer",
+];
 
 let wordIndex = 0;
 let charIndex = 0;
