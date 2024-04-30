@@ -20,17 +20,23 @@ body{
 
 .header {
     background-color: #F3F4F5;
-    height: 700px;
+  
+    
 }
 
 .navbar {
-    width: 100%;
-    height: 8vh;
+ width: 100%;
+    height: 7vh; 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 10px;
-   
+    justify-content: space-between; 
+    z-index: 10; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color: rgba(243, 244, 245, 0.8); 
+    backdrop-filter: blur(10px); 
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-logo {
@@ -47,18 +53,47 @@ body{
 
 .nav-item {
     padding: 0 15px; 
-    
 }
-
-
 
 .nav-link {
     color: black; 
     text-decoration: none; 
     font-size: 15px;
 }
+
+.nav-link:hover {
+    color: #333;
+    background-color: white;
+}
+
+.nav-link.active {
+    color: blue;
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+} 
+
+.Home {
+  width: 100%;
+  height: 690px;
+
+}
 .Text {
-    margin-top: 25vh;
+    padding-top: 25vh;
     margin-left: 20vh;
     position: relative;
 }
@@ -101,12 +136,13 @@ img {
     left: 0; 
     width: 100%; 
     height: auto;
+    padding-top: 50px;
 }
 
 .About {
     margin-top: 10px;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background-color: white;
 }
 
@@ -135,7 +171,7 @@ img {
 }
 
 .tittle-education {
-    margin-top: 90px;
+    margin-top: 20vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -159,7 +195,7 @@ img {
     padding: 1rem; 
     align-items: center;
     margin-left: 25vh;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .contain-education {
@@ -185,8 +221,13 @@ img {
 }
 
 
+.skills-section {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
 .skills__container {
-  margin-top: 5rem;
+  margin-top: 10vh;
   display: flex;  
   flex-direction: row;  
   justify-content: center;  
@@ -276,3 +317,22 @@ img {
   font-size: .75rem;
 }
 
+@media screen and (max-width: 788px) {
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        background: rgba(243, 244, 245, 0.9);
+        padding: 1rem;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

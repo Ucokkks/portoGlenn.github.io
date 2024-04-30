@@ -5,14 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (event) {
       event.preventDefault();
 
-      const targetId = this.getAttribute("href"); 
+      const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
         targetElement.scrollIntoView({
-          behavior: "smooth", 
-          block: "start", 
+          behavior: "smooth",
+          block: "start",
         });
+
+        navLinks.forEach((l) => l.classList.remove("active"));
+        this.classList.add("active");
       }
     });
   });
