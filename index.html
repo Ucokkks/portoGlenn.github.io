@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | Glenn</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Header start -->
     <header class="header" id="header">
         <nav class="navbar">
-            <h1  class="nav-logo">Gle<span class="nav-logo2">nn</span></h1>
+            <h1  class="nav-logo">GLENN</h1>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#header" class="nav-link">Home</a>
@@ -19,10 +21,13 @@
                     <a href="#About" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-education" class="nav-link">Education</a>
+                    <a href="#hehe" class="nav-link">Portofolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skill</a>
+                    <a href="#skill" class="nav-link">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -36,11 +41,13 @@
         <!-- Home start -->
     <div class="Home">
         <div class="Text">
-            <h1 class="name">Hello I'm Glenn<br><span>Seorang </span><span class="text-span" style="color: #10439F;"></span></h1>
+            <h1 class="name">Hello I'm Glenn<br><span >Seorang </span><span class="text-span" style="color: #10439F;"></span></h1>
+
+            
             <p>orang ganteng yang selalu menemani dirimu tidak pernah <br> tidak bersyukur, rajin, dan amat sangat sholeh dan siap kerja</p>
         </div>
-        <div class="Photo">
-            <img src="assets/Glenn.jpg" alt="orang ganteng">
+        <div class="Photo" data-aos="fade-up">
+            <img class="photoo_1" src="assets/Glenn.jpg" alt="orang ganteng">
         </div>
         <div class="social-media">
             <ul class="social-link">
@@ -48,6 +55,9 @@
                 <li class="logo-home"><a href=""><iconify-icon icon="pajamas:twitter" width="25px" height="25px" style="color: black;"></iconify-icon></a></li>
                 <li class="logo-home"><a href=""><iconify-icon icon="mdi:github" width="25px" height="25px" style="color: black;"></iconify-icon></a></li>
             </ul>
+        </div>
+        <div class="download-cv">
+            <a href=""><button><iconify-icon icon="material-symbols:download" width="25" height="25"></iconify-icon>Download CV</button></a>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave"><path fill="#273036" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,213.3C672,171,768,85,864,74.7C960,64,1056,128,1152,138.7C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
@@ -60,122 +70,144 @@
         <div class="About" id="About">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,224L30,208C60,192,120,160,180,133.3C240,107,300,85,360,96C420,107,480,149,540,165.3C600,181,660,171,720,144C780,117,840,75,900,74.7C960,75,1020,117,1080,138.7C1140,160,1200,160,1260,176C1320,192,1380,224,1410,240L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
 
-            <div class="sec-isi">
+            <div class="sec-isi" data-aos="fade-up" data-aos-duration="2000">
                 <h1 style="color: black;">About <span class="sec-isi-me" style="color:#10439F ;">Me</span></h1>
             </div>
-            <div class="wajah">
+            <div class="wajah" data-aos="fade-up" data-aos-duration="2000">
                 <img src="assets/Glenn.jpg" alt="orang sedeng" class="about-photo">                
                 <p style="font-size: 13px;">Saya adalah seorang individu yang penuh semangat dan ambisi. Cita-citamu untuk menjadi programmer menunjukkan bahwa kamu memiliki rasa ingin tahu yang kuat tentang teknologi dan cara kerja perangkat lunak. Kamu tidak takut untuk mengeksplorasi hal-hal baru, dan kesediaanmu untuk belajar menunjukkan bahwa kamu memiliki tekad untuk terus berkembang dan meningkatkan keterampilanmu.</p>
             </div>
         </div>
-       
     </section>
 
-    <!-- Education -->
-    <section class="section-education" id="section-education">
-        <div class="education-history" id="education">
-            <div class="tittle-education">
+
+    <section id="hehe">
+        <div class="porto" id="Portofolio" >
+            <div class="tittle">
                 <p>Explore My</p>
-                <h1>Education History</h1>
+                <h1>Portofolio</h1>
             </div>
-            <div class="education-wrapper">
-        <div class="contain-education">
-            <div class="result">
-                <h2>Sekolah Dasar</h2>
-                <p>Saya bersekolah di sebuah sekolah yang bernama Maria. <br> Disana sangat menyenangkan.</p>
+            <div class="img-skill" data-aos="zoom-in-down" data-aos-duration="1500">
+                <img class="img-skill-issue" src="assets/Screenshot 2024-05-09 155501.png" alt="">
+                <img class="img-skill-issue" src="assets/Screenshot 2024-05-09 155501.png" alt="">
+                <img class="img-skill-issue" src="assets/Screenshot 2024-05-09 155501.png" alt="">
             </div>
-        </div>
-        <div class="contain-education">
-            <div class="result">
-                <h2>Sekolah Menengah</h2>
-                <p>Saya bersekolah di sebuah sekolah yang bernama Maria. <br> Disana sangat menyenangkan.</p>
-            </div>
-        </div>
-        </div>
         </div>
     </section>
 
-    <section class="skills-section" id="skills" >
-                <h2 class="section-title" style="display: flex; text-align: center; justify-content: center; margin-top: 60px ;">Skill</h2>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Velit optio id vero amet,<br alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <iconify-icon icon="icon-park:html-five" width="20px" height="20px"></iconify-icon>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <iconify-icon icon="streamline:css-three-solid" width="20px" height="20px"></iconify-icon>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <iconify-icon icon="cib:javascript" width="20px" height="20px"></iconify-icon>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <iconify-icon icon="material-symbols:brush-outline" width="20px" height="20px"></iconify-icon>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/4884785.jpg" alt="" class="skills__img">
-                    </div>
+    
+    <div class="container-skill" id="skill" >
+        <div class="header-skill">
+            <p style="color: #10439F; font-size: 20px;">lets see</p>
+            <h1 style="font-size: 30px;">My Skill</h1>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-duration="1900">
+            <div class="card-skill">
+                <div class="icon-skill">
+                    <iconify-icon icon="devicon:java"></iconify-icon>
                 </div>
-            </section>
-
-        <footer class="footer">
-            <p class="footer__title">Glenn</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><iconify-icon icon="mdi:github" width="20px" height="20px"></iconify-icon></i></a>
-                <a href="#" class="footer__icon"><iconify-icon icon="ri:twitter-x-fill" width="20px" height="20px"></iconify-icon><i></a>
-                <a href="#" class="footer__icon"><iconify-icon icon="ic:baseline-whatsapp" width="23pxx" height="23px"></iconify-icon></i></a>
+                <div class="desc-skill">
+                    <h2>Java</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
-            <p class="footer__copy">&#169; Ini wm glenn ganteng banget loh</p>
-        </footer>
+            <div class="card-skill">
+                <div class="icon-skill">
+                    <iconify-icon icon="openmoji:javascript"></iconify-icon>
+                </div>
+                <div class="desc-skill">
+                    <h2>Java Script</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card-skill">
+                <div class="icon-skill">
+                    <iconify-icon icon="logos:python"></iconify-icon>
+                </div>
+                <div class="desc-skill">
+                    <h2>PYTHON</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card-skill">
+                <div class="icon-skill">
+                    <iconify-icon icon="logos:react"></iconify-icon>
+                </div>
+                <div class="desc-skill">
+                    <h2>REACT</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card-skill">
+                <div class="icon-skill">
+                    <iconify-icon icon="logos:nodejs"></iconify-icon>
+                </div>
+                <div class="desc-skill">
+                    <h2>Node JS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="contact">
+            <div class="contact-collum">
+                <div class="contact-text">
+                    <h1>Contact <span style="color: #10439F;">Me</span></h1>
+                </div>
+                <div class="gmail">
+                    <iconify-icon icon="material-symbols:mail" width="30" height="30" style="padding-right: 5px;"></iconify-icon>
+                    <p style="font-weight: bold;">glenmartua@gmail.com</p>
+                </div>
+                <div class="gmail1">
+                    <iconify-icon icon="bi:telephone-fill" width="25" height="25" style="padding-right: 10px;"></iconify-icon>
+                    <p style="font-weight: bold;">0877817182632</p>
+                </div>                
+            </div>
+
+
+            <div class="name">
+                <div class="name-text1">
+                    <input type="text" style="color: white;" placeholder="Your Name"  class="name-textt">
+                </div>
+                <div class="name-text">
+                    <input type="text" placeholder="Your Email" class="name-textt">
+                </div>
+                <div class="name-text3">
+                    <input type="text" placeholder="Your Message" class="texttt" style="background-color: #273036; border: none; padding-top: 15px; width: 300px;">
+                </div>
+                <div class="button-submit">
+                    <button class="button">SUBMIT</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="foot" style="width: 100%; background-color: #10439F; height: 7.5vh; color: #ffff; display: flex; text-align: center; justify-content: center;" >
+        <div class="name">
+            <p>Made By Glenn</p>
+            <div class="social-medias" style="padding-top: 5px;">
+            <ul class="social-links" style="display: flex; align-items: center; justify-content: center;">
+                <li class="logo-home"><a href=""><iconify-icon icon="skill-icons:instagram" width="15px" height="15px"></iconify-icon></a></li>
+                <li class="logo-home"><a href=""><iconify-icon icon="pajamas:twitter" width="15px" height="15px" style="color: black;"></iconify-icon></a></li>
+                <li class="logo-home"><a href=""><iconify-icon icon="mdi:github" width="15px" height="15px" style="color: black;"></iconify-icon></a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
 
 
 
-
-             
-
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script src="script.js"></script>
- 
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
